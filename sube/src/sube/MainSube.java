@@ -18,6 +18,7 @@ public class MainSube {
 	System.out.println("mostrar id");
 	System.out.println(s1.getId());
 	System.out.println(s1.toString());
+//	HGFHDFHDS
 	
 
 	}
