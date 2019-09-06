@@ -3,15 +3,15 @@ package sube;
 public class Sube {
 	//declaracion de atributos
 	private double saldo;
-	private double id;
+	private long id;
 	private double sNegativo;
 	
 	//declaracion de contructor con parametros
-	public Sube(double saldo, double id, double sNegativo) {
+	public Sube() {
 		
-		this.setSaldo(saldo);
-		this.setId(id);
-		this.setsNegativo(sNegativo);
+		this.setSaldo(0);
+		this.setId((long)(Math.random()*1e16));
+		this.setsNegativo(-50);
 	}
 
 	//getters and setters
@@ -30,7 +30,7 @@ public class Sube {
 	}
 
 
-	public void setId(double id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -64,9 +64,9 @@ public class Sube {
 	}
 	
 	//metodo viajar
-	public void viajar(double Saldo, double tarifa) {
+	public void viajar(double tarifa) {
 		
-	if(saldo >this.getsNegativo()) {
+	if(saldo-tarifa >=this.getsNegativo()) {
 		
 		
 		this.setSaldo(saldo=this.getSaldo()-tarifa);
