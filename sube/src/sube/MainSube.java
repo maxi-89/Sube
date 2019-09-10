@@ -18,15 +18,13 @@ public class MainSube {
 	System.out.println("mostrar id");
 	System.out.println(s1.getId());
 	System.out.println(s1.toString());
-<<<<<<< HEAD
+
 	System.out.println(s1.getSaldo());
 	System.out.println(s1.cargar(500));
 	System.out.println(s1.getSaldo());
 	System.out.println(s1.cargar(300));
 	System.out.println(s1.saldo());
-=======
-//	
->>>>>>> branch 'master' of https://github.com/maxi-89/Sube.git
+
 	
 
 	}
