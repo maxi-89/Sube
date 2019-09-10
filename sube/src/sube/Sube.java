@@ -74,7 +74,7 @@ public class Sube {
 		System.out.println("su saldo es : "+saldo);
 	}
 	else {
-		System.out.println("no posee saldo suficiente");
+		System.out.println("no posee saldo suficiente, deje de votar gobiernos de mierda");
 	}
 	}
 //
