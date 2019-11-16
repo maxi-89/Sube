@@ -18,28 +18,18 @@ public class Sube {
 	public double getSaldo() {
 		return saldo;
 	}
-
-
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-
-
 	public double getId() {
 		return id;
 	}
-
-
 	public void setId(long id) {
 		this.id = id;
 	}
-
-
 	public double getsNegativo() {
 		return sNegativo;
 	}
-
-
 	public void setsNegativo(double sNegativo) {
 		this.sNegativo = sNegativo;
 	}
@@ -50,15 +40,15 @@ public class Sube {
 		return "[SALDO:"+this.getSaldo()+"]";
 	}
 	
-	//metodo ver saldo
-	public double saldo() {
+	//metodo mostrar  saldo
+	public void  mostrarSaldo() {
 		
-		return this.getSaldo();
+		System.out.println(this.getSaldo()); 
 	}
 	//metodo cargar saldo
 	
-	public  double cargar(double saldo) {
-		saldo=this.getSaldo()+saldo;
+	public  double cargar(double importeACargar) {
+		this.saldo=this.getSaldo()+importeACargar;
 		this.setSaldo(saldo);
 		return  saldo;
 	}
@@ -66,15 +56,15 @@ public class Sube {
 	//metodo viajar
 	public void viajar(double tarifa) {
 		
-	if(saldo-tarifa >=this.getsNegativo()) {
+	if(this.saldo-tarifa >=this.getsNegativo()) {
 		
 		
-		this.setSaldo(saldo=this.getSaldo()-tarifa);
+		this.setSaldo(this.saldo=this.getSaldo()-tarifa);
 		System.out.println("buen viaje");
-		System.out.println("su saldo es : "+saldo);
+		System.out.println("su saldo es : "+this.saldo);
 	}
 	else {
-		System.out.println("no posee saldo suficiente, deje de votar gobiernos de mierda");
+		System.out.println("no posee saldo suficiente");
 	}
 	}
 //

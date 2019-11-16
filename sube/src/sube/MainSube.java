@@ -6,11 +6,11 @@ public class MainSube {
 	Sube s1=new Sube ();
 	
 	System.out.println("mostrar saldo");
-	System.out.println(s1.saldo());
+	s1.mostrarSaldo();
 	System.out.println("cargar 50 pesos");
-	System.out.println(s1.cargar(50));
+	s1.cargar(50);
 	System.out.println("mostrar nuevo saldo");
-	System.out.println(s1.saldo());
+	s1.mostrarSaldo();
 	System.out.println("viajar");
 	s1.viajar(20);
 	System.out.println("mostrar nuevo saldo");
@@ -23,7 +23,7 @@ public class MainSube {
 	System.out.println(s1.cargar(500));
 	System.out.println(s1.getSaldo());
 	System.out.println(s1.cargar(300));
-	System.out.println(s1.saldo());
+	s1.mostrarSaldo();
 
 	
 
